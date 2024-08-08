@@ -1,0 +1,4 @@
+the UI is ok but the login and signup are not 
+must correct it 
+the tasks html file is ok 
+just the auth 

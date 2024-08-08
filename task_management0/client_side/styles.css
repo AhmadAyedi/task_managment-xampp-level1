@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007BFF; /* Highlighted title color */
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545; /* Red background color for default state */
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition */
+}
+
+button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+button.completed {
+    background-color: #28a745 !important; /* Green background color for completed tasks */
+    color: white; /* White text color for completed tasks */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition */
+}
+
+button.completed:hover {
+    background-color: #218838 !important; /* Darker green on hover */
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition */
+}
+
+.task.completed {
+    background-color: #d4edda; /* Light green background for completed tasks */
+    text-decoration: none; /* Remove strikethrough */
+    color: #155724; /* Darker text color for completed tasks */
+}
+
+.task button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545; /* Red button background color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.task.completed button {
+    background-color: #28a745; /* Green button background color for completed tasks */
+}
+
+.task.completed button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.task .deadline {
+    font-size: 0.9em;
+    color: #6c757d;
+}

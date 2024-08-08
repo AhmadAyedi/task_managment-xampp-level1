@@ -1,0 +1,2 @@
+take notes with deadlines but without signup and login 
+and other problem is that when user press task achieved it is marked as 1 in db but not telling him in the user interface that task is marked achieved 
